@@ -4,7 +4,7 @@ const mongoose =require('mongoose')
 const cors =require('cors')
 const cookieParser = require('cookie-parser')
 const app = express();
-
+const PORT = process.env.PORT || 5000;
 
 dotenv.config({path:'./config.env'});
 require('./db/conn');
@@ -43,4 +43,4 @@ app.get('/signup', (req, res) => {
     res.send(`Registration`)
 })
 
-app.listen(5000)
+app.listen(PORT);

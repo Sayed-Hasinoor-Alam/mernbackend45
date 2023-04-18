@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const DB = process.env.DATABASE;
-const PORT = process.env.PORT;
+// const PORT = process.env.PORT || 5000
 
 mongoose.connect(DB,{
     useUnifiedTopology: true,

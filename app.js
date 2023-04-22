@@ -32,6 +32,11 @@ app.use(require('./router/auth'));
 // app.get('/contact', (req, res) => {
 //     res.send(`Hello contact world from server`)
 // })
+// entry point
+
+app.get('/',(req, res) => {
+    res.send(`Hello server Hi`);
+})
 
 
 app.get('/signin', (req, res) => {
